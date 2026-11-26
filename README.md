@@ -106,7 +106,7 @@ uv run --env-file .env examples/check_gs.py
 cd examples/locomotion
 
 # 学習（環境数は VRAM に合わせて調整）
-uv run go2_train.py -e go2-walking -B 512 --max_iterations 101
+uv run go2_train.py -e go2-walking -b 512 --max-iterations 20
 
 # 学習済みモデルの評価
 uv run go2_eval.py -e go2-walking --ckpt 100
